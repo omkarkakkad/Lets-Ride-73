@@ -1,15 +1,15 @@
-import * as firebase from "firebase";
-require("@firebase/firestore");
+import * as firebase from 'firebase';
+require('@firebase/firestore');
 
-var firebaseConfig = {
-  apiKey: "AIzaSyDKuYqcZGaJOVJTl7wsVOG6EaTHNas-UOA",
-  authDomain: "cycle-app-39658.firebaseapp.com",
-  projectId: "cycle-app-39658",
-  storageBucket: "cycle-app-39658.appspot.com",
-  messagingSenderId: "432365679199",
-  appId: "1:432365679199:web:249b550bde861bf93621ea",
+const firebaseConfig = {
+  apiKey: 'AIzaSyCmueW2IvbcPMzyJbB2b_yu6s3Qk3WPpd4',
+  authDomain: 'lets-ride-bcfb3.firebaseapp.com',
+  projectId: 'lets-ride-bcfb3',
+  storageBucket: 'lets-ride-bcfb3.appspot.com',
+  messagingSenderId: '550604979251',
+  appId: '1:550604979251:web:428a5c954807496651f746',
 };
 
-firebase.initializeApp(firebaseConfig);
-
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 export default firebase.firestore();
